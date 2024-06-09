@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+""" This script sets up my web servers for the deployment of web_static"""
+
 
 # server names (replace with your actual IP addresses)
 SERVER_NAME_1="3.91.244.104"
