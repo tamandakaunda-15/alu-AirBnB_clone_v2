@@ -1,4 +1,6 @@
-erver names (replace with your actual IP addresses)
+#!/usr/bin/env bash
+
+# server names (replace with your actual IP addresses)
 SERVER_NAME_1="3.91.244.104"
 SERVER_NAME_2="204.236.213.151"
 
