@@ -2,8 +2,8 @@
 # This script sets up my web servers for the deployment of web_static
 
 # server names (actual IP addresses)
-SERVER_NAME_1="3.91.244.104"
-SERVER_NAME_2="204.236.213.151"
+export SERVER_NAME_1="3.91.244.104"
+export SERVER_NAME_2="204.236.213.151"
 
 # Install Nginx if it's not already installed
 if ! dpkg -s nginx >/dev/null 2>&1; then
