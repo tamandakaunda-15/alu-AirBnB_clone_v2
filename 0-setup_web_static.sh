@@ -28,14 +28,10 @@ echo "<html>
 sudo ln -sf /data/web_static/releases/test/ /data/web_static/current
 
 # Set ownership of /data/ directory
-sudo chown -R ubuntu::ubuntu /data/
+sudo chown -R ubuntu:ubuntu /data/
 
-# Update Nginx configuration
 sudo sed -i "/^\tlocation \/hbnb_static/ {
     \n\t\talias /data/web_static/current;\n\t}
-    /^\t\tlocation \/ {
-    \n\t\t\treturn 301 https://tamandakaunda.tech;\n\t\t}
-" /etc/nginx/sites-available/default
+}" /etc/nginx/sites-available/default
 
-# Restart Nginx
 sudo service nginx restart
