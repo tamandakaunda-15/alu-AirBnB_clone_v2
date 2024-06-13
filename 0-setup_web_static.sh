@@ -35,3 +35,5 @@ sudo sed -i "/^\tlocation \/hbnb_static/ {
 }" /etc/nginx/sites-available/default
 
 sudo service nginx restart
+
+curl http://localhost/hbnb_static
