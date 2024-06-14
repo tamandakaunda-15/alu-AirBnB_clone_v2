@@ -41,10 +41,10 @@ def do_deploy(archive_path):
         run('rm -rf {}{}/web_static'.format(path, no_ext))
         run('rm -rf /data/web_static/current')
         run('ln -s {}{}/ /data/web_static/current'.format(path, no_ext))
+        run('cp -r {}{}/web_static/* /data/web_static/current/'.format(path, no_ext))
         return True
     except:
         return False
-
 
 def deploy():
     """creates and distributes an archive to the web servers"""
